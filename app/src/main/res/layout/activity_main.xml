@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGraylight"
+    android:orientation="vertical"
+    tools:context="com.example.munira.notebooklist.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--image and name start here-->
+
+        <LinearLayout
+            android:background="@drawable/gradientbackground"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/creator"/>
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sirajum Munira"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="21sp"/>
+
+        </LinearLayout>
+
+        <!--./image and name end here-->
+
+
+        <!--first row menu card start here-->
+        <android.support.v7.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="192dp"
+            android:id="@+id/cardView">
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/total_income_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:textSize="20sp"/>
+
+
+                    <TextView
+                        android:id="@+id/total_income_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:paddingTop="10sp"
+                        android:textColor="@color/startblue"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/total_argent_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Argent"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/total_argent_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:paddingTop="10sp"
+                        android:textColor="@color/startblue"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/total_probality_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Possible"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/total_probality_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:paddingTop="10sp"
+                        android:textColor="@color/startblue"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/total_yearly_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yearly"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/total_yearly_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:paddingTop="10sp"
+                        android:textColor="@color/startblue"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+        <!--./first row menu card end-->
+
+
+        <!--first card start here-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cardView"
+            android:background="@color/colorBackground"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/income_image"
+                            android:layout_width="64dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/circel_background_purple"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_attach_money_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/income_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="Income"
+                            android:textStyle="bold" />
+
+                        <!--  <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/colorGraylight" />-->
+
+                        <Button
+                            android:id="@+id/income_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+
+                            android:background="@color/MaterialYellowLight"
+                            android:paddingBottom="35dp"
+                            android:text="Add"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <!--
+                                     <Button
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:text="show"
+                                               android:textColor="#fff"
+                                               android:textStyle="bold"
+                                               android:background="@color/MaterialPink"/>-->
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/argent_image"
+                            android:layout_width="64dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/circle_background_pink"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_shopping_cart_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/argent_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="Argent"
+                            android:textStyle="bold" />
+
+                        <!--    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/colorGraylight" />-->
+
+                        <Button
+                            android:id="@+id/argent_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:background="@color/MaterialYellowLight"
+                            android:paddingBottom="35dp"
+                            android:text="Add"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+
+                        <!-- <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="show"
+                                android:textColor="#fff"
+                                android:textStyle="bold"
+                                android:background="@color/MaterialPink"/>-->
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <!--first 2 row card end here-->
+
+
+           <!-- second card row start here-->
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/probality_image"
+                            android:layout_width="64dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/circel_background_red"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_lightbulb_outline_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/probality_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="Possible"
+                            android:textStyle="bold" />
+<!--
+                 &lt;!&ndash;       <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/colorGraylight" />&ndash;&gt;-->
+
+                        <Button
+                            android:id="@+id/probality_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:paddingBottom="40dp"
+                            android:background="@color/MaterialYellowLight"
+                            android:text="Add"
+                            android:textColor="#fff"
+                            android:textStyle="bold"/>
+
+                   <!--     &lt;!&ndash;
+                                     <Button
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:text="show"
+                                               android:textColor="#fff"
+                                               android:textStyle="bold"
+                                               android:background="@color/MaterialPink"/>&ndash;&gt;-->
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/yearly_image"
+                            android:layout_width="64dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/circle_background_green"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_control_point_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/yearly_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="Yearly"
+                            android:textStyle="bold" />
+<!--&lt;!&ndash;
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/colorGraylight" />&ndash;&gt;-->
+
+                        <Button
+                            android:id="@+id/yearly_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:paddingBottom="40dp"
+
+                            android:background="@color/MaterialYellowLight"
+                            android:text="Add"
+                            android:textColor="#fff"
+                            android:textStyle="bold"/>
+
+
+                      <!--<Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="show"
+                                android:textColor="#fff"
+                                android:textStyle="bold"
+                                android:background="@color/MaterialPink"/>-->
+
+
+                    </LinearLayout>
+
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+
+
+            </LinearLayout>
+            <!--./Second card end here-->
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
